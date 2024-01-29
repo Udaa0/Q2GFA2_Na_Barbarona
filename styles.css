@@ -1,0 +1,146 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(55, 55, 120);
+}
+
+h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(107, 107, 227);
+}
+
+body
+{
+    background-color: rgb(39, 39, 56);
+}
+
+.banner
+{
+    position: absolute;
+}
+
+.navbar
+{
+    margin: 0px;
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: black;
+    position: fixed;
+    opacity: .5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 97.5%;
+    height: 30px;
+    top: 0;
+    z-index: 4;
+}
+
+
+#Earth
+{
+    position: absolute;
+    animation: earthmove linear 60s infinite;
+}
+
+#Earth img
+{
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes earthmove
+{
+    0% {transform: translate(-200px, 350px) scale(1); z-index: 1;}
+    10% {transform: translate(-50px, 330px) scale(.95); z-index: 1;}
+    20% {transform: translate(75px, 310px) scale(.9); z-index: 1;}
+    30% {transform: translate(175px, 290px) scale(.85); z-index: 1;}
+    40% {transform: translate(250px, 270px) scale(.8); z-index: 1;}
+    50% {transform: translate(300px, 250px) scale(.75);}
+    60% {transform: translate(250px, 230px) scale(.7);}
+    70% {transform: translate(175px, 210px) scale(.65);}
+    80% {transform: translate(75px, 190px) scale(.6);}
+    90% {transform: translate(-50px, 170px) scale(.55);}
+    100% {transform: translate(-200px, 150px) scale(.5);}
+}
+
+#Mars
+{
+    position: absolute;
+    animation: marsmove linear 80s infinite;
+}
+
+#Mars img
+{
+    height: 225px;
+    width: 225px;
+}
+
+@keyframes marsmove
+{
+    0% {transform: translate(550px, 290px) scale(.8); z-index: 2;}
+    10% {transform: translate(700px, 250px) scale(.75); z-index: -1;}
+    20% {transform: translate(550px, 210px) scale(.7); z-index: -1;}
+    30% {transform: translate(425px, 170px) scale(.65); z-index: -1;}
+    40% {transform: translate(225px, 130px) scale(.6); z-index: -1;}
+    50% {transform: translate(75px, 90px) scale(.55); z-index: -1;}
+    60% {transform: translate(-200px, 50px) scale(.5); z-index: -1;}
+    70% {transform: translate(75px, 410px) scale(.95); z-index: 2;}
+    80% {transform: translate(225px, 370px) scale(.9); z-index: 2;}
+    90% {transform: translate(425px, 330px) scale(.85); z-index: 2;}
+    100% {transform: translate(450px, 290px) scale(.8); z-index: 2;}
+}
+
+#Saturn
+{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#Saturn img
+{
+    height: 500px;
+    width: 500px;
+}
+
+@keyframes saturnmove
+{
+    0% {transform: translate(100px, 0px) skew(60deg); z-index: 3;}
+    50% {transform: translate(600px, 50px) rotate(200deg); z-index: 3;}
+    100% {transform: translate(1400px, 125px) rotate(620deg); z-index: 3;}
+}
+
+#Meteor
+{
+    position: absolute;
+    animation: meteormove linear 10s infinite;
+}
+
+#Meteor img
+{
+    height: 75px;
+    width: 75px;
+}
+
+@keyframes meteormove
+{
+    0% {transform: translate(-100px, 0px) skew(60deg); z-index: 3;}
+    50% {transform: translate(600px, 50px) rotate(200deg); z-index: 3;}
+    100% {transform: translate(1400px, 125px) rotate(620deg); z-index: 3;}
+}
